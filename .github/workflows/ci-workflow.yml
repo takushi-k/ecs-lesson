@@ -3,7 +3,7 @@ name: CI flow for Amazon ECS
 on: [push]
 
 env:
-  SLACK_WEBHOOK: https://hooks.slack.com/services/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
+  SLACK_WEBHOOK: https://hooks.slack.com/services/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
 
 jobs:
   ci:
@@ -12,8 +12,8 @@ jobs:
     timeout-minutes: 10
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    # - name: Checkout
+    #   uses: actions/checkout@v2
 
     # - name: Unit Test
     #   run: cd ${{ github.workspace }}
