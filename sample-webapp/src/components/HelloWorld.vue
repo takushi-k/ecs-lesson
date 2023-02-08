@@ -20,7 +20,7 @@ export default {
   }
   ,
   mounted() {
-    const BACKEND_URL = 'https://ecs-lesson-lb-1941348471.ap-northeast-1.elb.amazonaws.com/api'
+    const BACKEND_URL = 'http://ecs-lesson-lb-1941348471.ap-northeast-1.elb.amazonaws.com/api'
     axios
       .get(BACKEND_URL)
       .then(response => (this.info = response.data))
